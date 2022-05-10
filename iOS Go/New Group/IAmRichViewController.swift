@@ -1,13 +1,13 @@
 //
 //  ViewController.swift
-//  iOS Go
+//  I am Rich
 //
-//  Created by 김동겸 on 2022/05/10.
+//  Created by 김동겸 on 2022/05/08.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class IAmRichViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-

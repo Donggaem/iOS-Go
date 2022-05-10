@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB0282A98E500076820 /* AppDelegate.swift */; };
 		EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB2282A98E500076820 /* SceneDelegate.swift */; };
-		EBCB0EB5282A98E500076820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB4282A98E500076820 /* ViewController.swift */; };
 		EBCB0EB8282A98E500076820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB0EB6282A98E500076820 /* Main.storyboard */; };
 		EBCB0EBA282A98E600076820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCB0EB9282A98E600076820 /* Assets.xcassets */; };
 		EBCB0EBD282A98E600076820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB0EBB282A98E600076820 /* LaunchScreen.storyboard */; };
+		EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EC6282A99DC00076820 /* IAmRichViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBCB0EAD282A98E500076820 /* iOS Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCB0EB0282A98E500076820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBCB0EB2282A98E500076820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBCB0EB4282A98E500076820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBCB0EB7282A98E500076820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBCB0EB9282A98E600076820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBCB0EBC282A98E600076820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBCB0EBE282A98E600076820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCB0EC6282A99DC00076820 /* IAmRichViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmRichViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		EBCB0EAF282A98E500076820 /* iOS Go */ = {
 			isa = PBXGroup;
 			children = (
-				EBCB0EB0282A98E500076820 /* AppDelegate.swift */,
-				EBCB0EB2282A98E500076820 /* SceneDelegate.swift */,
-				EBCB0EB4282A98E500076820 /* ViewController.swift */,
+				EBCB0EC4282A993800076820 /* BaseFile */,
+				EBCB0EC5282A996000076820 /* New Group */,
 				EBCB0EB6282A98E500076820 /* Main.storyboard */,
 				EBCB0EB9282A98E600076820 /* Assets.xcassets */,
 				EBCB0EBB282A98E600076820 /* LaunchScreen.storyboard */,
 				EBCB0EBE282A98E600076820 /* Info.plist */,
 			);
 			path = "iOS Go";
+			sourceTree = "<group>";
+		};
+		EBCB0EC4282A993800076820 /* BaseFile */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB0EB0282A98E500076820 /* AppDelegate.swift */,
+				EBCB0EB2282A98E500076820 /* SceneDelegate.swift */,
+			);
+			name = BaseFile;
+			sourceTree = "<group>";
+		};
+		EBCB0EC5282A996000076820 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB0EC6282A99DC00076820 /* IAmRichViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBCB0EB5282A98E500076820 /* ViewController.swift in Sources */,
 				EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */,
+				EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */,
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
