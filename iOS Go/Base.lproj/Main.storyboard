@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fYQ-IM-Iai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q2Q-UN-2z9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -44,56 +44,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0Be-dv-jPR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0Be-dv-jPR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="T8V-FC-Alw">
-                                <rect key="frame" x="87" y="176" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="M9H-Hu-Ot8">
-                                <rect key="frame" x="49" y="388" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="userLabel" base64-UTF8="YES">
-RGljZRBPbmU
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-v7-noj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BE-KK-EWP" userLabel="TopView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="T8V-FC-Alw">
+                                                <rect key="frame" x="109" y="72" width="196" height="128"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="T8V-FC-Alw" firstAttribute="centerX" secondItem="2BE-KK-EWP" secondAttribute="centerX" id="060-pF-CVQ"/>
+                                            <constraint firstItem="T8V-FC-Alw" firstAttribute="centerY" secondItem="2BE-KK-EWP" secondAttribute="centerY" id="on4-gQ-MRu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mug-c5-siT" userLabel="MiddleView">
+                                        <rect key="frame" x="0.0" y="273" width="414" height="272"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-xw-gW6">
+                                                <rect key="frame" x="82" y="86" width="250" height="100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="M9H-Hu-Ot8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <string key="userLabel" base64-UTF8="YES">
+RGljZRAgSW1hZ2UgVmlldzE
 </string>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="rQR-Ph-BHK">
-                                <rect key="frame" x="232" y="388" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="284-oW-TPS">
-                                <rect key="frame" x="232" y="388" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLb-GW-eqO">
-                                <rect key="frame" x="130" y="609" width="130" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Roll">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="rollButtonPressed:" destination="q2Q-UN-2z9" eventType="touchUpInside" id="WTj-ws-I9x"/>
-                                </connections>
-                            </button>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="rQR-Ph-BHK">
+                                                        <rect key="frame" x="150" y="0.0" width="100" height="100"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QiN-xw-gW6" firstAttribute="centerX" secondItem="mug-c5-siT" secondAttribute="centerX" id="BEV-qQ-bM5"/>
+                                            <constraint firstItem="QiN-xw-gW6" firstAttribute="centerY" secondItem="mug-c5-siT" secondAttribute="centerY" id="HQW-F5-bF5"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-vA-hod" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="546" width="414" height="272"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLb-GW-eqO">
+                                                <rect key="frame" x="157" y="111" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="QZ8-7d-4fP"/>
+                                                    <constraint firstAttribute="height" constant="50" id="fNM-8b-5Ga"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Roll">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="rollButtonPressed:" destination="q2Q-UN-2z9" eventType="touchUpInside" id="WTj-ws-I9x"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FLb-GW-eqO" firstAttribute="centerY" secondItem="sDF-vA-hod" secondAttribute="centerY" id="RN9-DV-QcA"/>
+                                            <constraint firstItem="FLb-GW-eqO" firstAttribute="centerX" secondItem="sDF-vA-hod" secondAttribute="centerX" id="YSa-PZ-6YY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O9d-yK-WUe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Be-dv-jPR" firstAttribute="top" secondItem="p9Z-hS-Bo8" secondAttribute="top" id="D5x-E8-8HE"/>
+                            <constraint firstItem="HYZ-v7-noj" firstAttribute="trailing" secondItem="O9d-yK-WUe" secondAttribute="trailing" id="L3e-S9-A9v"/>
+                            <constraint firstItem="HYZ-v7-noj" firstAttribute="bottom" secondItem="O9d-yK-WUe" secondAttribute="bottom" id="dV1-W5-fAd"/>
+                            <constraint firstAttribute="bottom" secondItem="0Be-dv-jPR" secondAttribute="bottom" id="jv9-vP-WWS"/>
+                            <constraint firstItem="0Be-dv-jPR" firstAttribute="leading" secondItem="p9Z-hS-Bo8" secondAttribute="leading" id="vUm-Mr-hsQ"/>
+                            <constraint firstItem="HYZ-v7-noj" firstAttribute="leading" secondItem="O9d-yK-WUe" secondAttribute="leading" id="w0z-ps-dEY"/>
+                            <constraint firstItem="HYZ-v7-noj" firstAttribute="top" secondItem="O9d-yK-WUe" secondAttribute="top" id="xWw-CS-TIT"/>
+                            <constraint firstAttribute="trailing" secondItem="0Be-dv-jPR" secondAttribute="trailing" id="zen-oR-HYY"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="diceImageView1" destination="M9H-Hu-Ot8" id="Dds-k0-7Ah"/>
-                        <outlet property="diceImageView2" destination="284-oW-TPS" id="Ue4-Dd-ETl"/>
+                        <outlet property="diceImageView1" destination="M9H-Hu-Ot8" id="SHy-Bx-HFD"/>
+                        <outlet property="diceImageView2" destination="rQR-Ph-BHK" id="pVI-To-dsN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5o0-lb-pfr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-267" y="66"/>
+            <point key="canvasLocation" x="-268.1159420289855" y="65.625"/>
         </scene>
         <!--Magic 8ball View Controller-->
         <scene sceneID="hB5-QP-UNE">
