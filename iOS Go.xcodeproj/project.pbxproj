@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */; };
+		EB0C4C58282FCFF000B0E267 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */; };
 		EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */; };
-		EB5531E1282E5A740086E5AB /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531DA282E5A740086E5AB /* A.wav */; };
-		EB5531E2282E5A740086E5AB /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531DB282E5A740086E5AB /* E.wav */; };
-		EB5531E3282E5A740086E5AB /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531DC282E5A740086E5AB /* F.wav */; };
-		EB5531E4282E5A740086E5AB /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531DD282E5A740086E5AB /* G.wav */; };
-		EB5531E5282E5A740086E5AB /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531DE282E5A740086E5AB /* B.wav */; };
-		EB5531E6282E5A740086E5AB /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531DF282E5A740086E5AB /* C.wav */; };
-		EB5531E7282E5A740086E5AB /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531E0282E5A740086E5AB /* D.wav */; };
+		EB5531EF282E5BE80086E5AB /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531E8282E5BE80086E5AB /* G.wav */; };
+		EB5531F0282E5BE80086E5AB /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531E9282E5BE80086E5AB /* F.wav */; };
+		EB5531F1282E5BE80086E5AB /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EA282E5BE80086E5AB /* A.wav */; };
+		EB5531F2282E5BE80086E5AB /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EB282E5BE80086E5AB /* C.wav */; };
+		EB5531F3282E5BE80086E5AB /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EC282E5BE80086E5AB /* E.wav */; };
+		EB5531F4282E5BE80086E5AB /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531ED282E5BE80086E5AB /* B.wav */; };
+		EB5531F5282E5BE80086E5AB /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EE282E5BE80086E5AB /* D.wav */; };
 		EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB0282A98E500076820 /* AppDelegate.swift */; };
 		EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB2282A98E500076820 /* SceneDelegate.swift */; };
 		EBCB0EB8282A98E500076820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB0EB6282A98E500076820 /* Main.storyboard */; };
@@ -26,14 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
+		EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xylophoneViewController.swift; sourceTree = "<group>"; };
-		EB5531DA282E5A740086E5AB /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = A.wav; path = "../../../../Xylophone-iOS13/Xylophone/Sounds/A.wav"; sourceTree = "<group>"; };
-		EB5531DB282E5A740086E5AB /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = E.wav; path = "../../../../Xylophone-iOS13/Xylophone/Sounds/E.wav"; sourceTree = "<group>"; };
-		EB5531DC282E5A740086E5AB /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = F.wav; path = "../../../../Xylophone-iOS13/Xylophone/Sounds/F.wav"; sourceTree = "<group>"; };
-		EB5531DD282E5A740086E5AB /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = G.wav; path = "../../../../Xylophone-iOS13/Xylophone/Sounds/G.wav"; sourceTree = "<group>"; };
-		EB5531DE282E5A740086E5AB /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = B.wav; path = "../../../../Xylophone-iOS13/Xylophone/Sounds/B.wav"; sourceTree = "<group>"; };
-		EB5531DF282E5A740086E5AB /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = C.wav; path = "../../../../Xylophone-iOS13/Xylophone/Sounds/C.wav"; sourceTree = "<group>"; };
-		EB5531E0282E5A740086E5AB /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = D.wav; path = "../../../../Xylophone-iOS13/Xylophone/Sounds/D.wav"; sourceTree = "<group>"; };
+		EB5531E8282E5BE80086E5AB /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		EB5531E9282E5BE80086E5AB /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		EB5531EA282E5BE80086E5AB /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		EB5531EB282E5BE80086E5AB /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		EB5531EC282E5BE80086E5AB /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		EB5531ED282E5BE80086E5AB /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		EB5531EE282E5BE80086E5AB /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 		EBCB0EAD282A98E500076820 /* iOS Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCB0EB0282A98E500076820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBCB0EB2282A98E500076820 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB0C4C52282FCEDE00B0E267 /* EggTimer */ = {
+			isa = PBXGroup;
+			children = (
+				EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */,
+				EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */,
+			);
+			path = EggTimer;
+			sourceTree = "<group>";
+		};
 		EB5531D6282E59760086E5AB /* Xylophone */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +82,13 @@
 		EB5531D9282E5A540086E5AB /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				EB5531DA282E5A740086E5AB /* A.wav */,
-				EB5531DE282E5A740086E5AB /* B.wav */,
-				EB5531DF282E5A740086E5AB /* C.wav */,
-				EB5531E0282E5A740086E5AB /* D.wav */,
-				EB5531DB282E5A740086E5AB /* E.wav */,
-				EB5531DC282E5A740086E5AB /* F.wav */,
-				EB5531DD282E5A740086E5AB /* G.wav */,
+				EB5531EA282E5BE80086E5AB /* A.wav */,
+				EB5531ED282E5BE80086E5AB /* B.wav */,
+				EB5531EB282E5BE80086E5AB /* C.wav */,
+				EB5531EE282E5BE80086E5AB /* D.wav */,
+				EB5531EC282E5BE80086E5AB /* E.wav */,
+				EB5531E9282E5BE80086E5AB /* F.wav */,
+				EB5531E8282E5BE80086E5AB /* G.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -99,6 +112,7 @@
 		EBCB0EAF282A98E500076820 /* iOS Go */ = {
 			isa = PBXGroup;
 			children = (
+				EB0C4C52282FCEDE00B0E267 /* EggTimer */,
 				EB5531D6282E59760086E5AB /* Xylophone */,
 				EBDA9546282BB0D900C02F96 /* Magic 8 ball */,
 				EBCB0EC8282A9D4900076820 /* DiceRoll */,
@@ -203,16 +217,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB5531E2282E5A740086E5AB /* E.wav in Resources */,
+				EB5531F1282E5BE80086E5AB /* A.wav in Resources */,
+				EB5531EF282E5BE80086E5AB /* G.wav in Resources */,
 				EBCB0EBD282A98E600076820 /* LaunchScreen.storyboard in Resources */,
+				EB0C4C58282FCFF000B0E267 /* alarm_sound.mp3 in Resources */,
 				EBCB0EBA282A98E600076820 /* Assets.xcassets in Resources */,
-				EB5531E6282E5A740086E5AB /* C.wav in Resources */,
-				EB5531E5282E5A740086E5AB /* B.wav in Resources */,
-				EB5531E3282E5A740086E5AB /* F.wav in Resources */,
-				EB5531E4282E5A740086E5AB /* G.wav in Resources */,
-				EB5531E7282E5A740086E5AB /* D.wav in Resources */,
-				EB5531E1282E5A740086E5AB /* A.wav in Resources */,
+				EB5531F0282E5BE80086E5AB /* F.wav in Resources */,
 				EBCB0EB8282A98E500076820 /* Main.storyboard in Resources */,
+				EB5531F4282E5BE80086E5AB /* B.wav in Resources */,
+				EB5531F5282E5BE80086E5AB /* D.wav in Resources */,
+				EB5531F3282E5BE80086E5AB /* E.wav in Resources */,
+				EB5531F2282E5BE80086E5AB /* C.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +244,7 @@
 				EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */,
 				EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */,
 				EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */,
+				EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
