@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hAf-ae-PDI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gZU-fC-yPj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2k-Ur-1rk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="510" y="79"/>
+            <point key="canvasLocation" x="461" y="66"/>
         </scene>
         <!--Dice Roll View Controller-->
         <scene sceneID="tug-GV-gzx">
@@ -180,7 +180,7 @@ RGljZRAgSW1hZ2UgVmlldzE
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHz-j9-8OI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-268" y="732"/>
+            <point key="canvasLocation" x="-268" y="796"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hvx-3I-awJ">
@@ -408,7 +408,7 @@ RGljZRAgSW1hZ2UgVmlldzE
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wt9-Eo-mNQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532" y="732"/>
+            <point key="canvasLocation" x="461" y="796"/>
         </scene>
         <!--Xylophone View Controller-->
         <scene sceneID="TdA-rd-bRA">
@@ -604,7 +604,7 @@ RGljZRAgSW1hZ2UgVmlldzE
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RH5-4J-N1R" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="142"/>
+            <point key="canvasLocation" x="1193" y="78"/>
         </scene>
         <!--Egg Timer View Controller-->
         <scene sceneID="niw-lR-NPb">
@@ -754,13 +754,102 @@ RGljZRAgSW1hZ2UgVmlldzE
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McR-jV-VDq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248" y="801"/>
+            <point key="canvasLocation" x="1193" y="796"/>
+        </scene>
+        <!--Quizzler View Controller-->
+        <scene sceneID="1mc-Ia-IEP">
+            <objects>
+                <viewController id="gZU-fC-yPj" customClass="QuizzlerViewController" customModule="iOS_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mgU-KV-1zx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="QsZ-ky-bQe">
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="cRG-Wk-bNT"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="czv-xJ-PKN">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbk-Gt-Tde">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="618"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-ja-pNn">
+                                        <rect key="frame" x="0.0" y="628" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="SC9-Vd-S0H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="True" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="gZU-fC-yPj" eventType="touchUpInside" id="CvY-3S-PkU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3P-iQ-3iR">
+                                        <rect key="frame" x="0.0" y="718" width="374" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="auj-gW-sGI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="False" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="gZU-fC-yPj" eventType="touchUpInside" id="A6E-r9-c16"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L73-cu-uDF">
+                                        <rect key="frame" x="0.0" y="808" width="374" height="11"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.2770131528" green="0.3800790906" blue="0.57570761439999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="xNK-dA-u7i"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="1" green="0.45854175089999999" blue="0.6605013609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nAR-eA-93E"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QsZ-ky-bQe" firstAttribute="leading" secondItem="nAR-eA-93E" secondAttribute="leading" id="08c-28-rTn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="czv-xJ-PKN" secondAttribute="trailing" id="0fA-0Y-N0o"/>
+                            <constraint firstAttribute="bottom" secondItem="QsZ-ky-bQe" secondAttribute="bottom" id="7I9-X8-6yo"/>
+                            <constraint firstItem="nAR-eA-93E" firstAttribute="bottom" secondItem="czv-xJ-PKN" secondAttribute="bottom" id="Pvx-lp-ecn"/>
+                            <constraint firstItem="czv-xJ-PKN" firstAttribute="top" secondItem="nAR-eA-93E" secondAttribute="top" id="YIK-h3-iTy"/>
+                            <constraint firstItem="czv-xJ-PKN" firstAttribute="leading" secondItem="mgU-KV-1zx" secondAttribute="leadingMargin" id="i7c-aI-OcG"/>
+                            <constraint firstItem="QsZ-ky-bQe" firstAttribute="trailing" secondItem="nAR-eA-93E" secondAttribute="trailing" id="vwB-aF-woQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="falseButton" destination="K3P-iQ-3iR" id="B2h-ZL-K0v"/>
+                        <outlet property="progressBar" destination="L73-cu-uDF" id="ycd-cS-eUa"/>
+                        <outlet property="questionLabel" destination="kbk-Gt-Tde" id="1AB-sc-Z4Y"/>
+                        <outlet property="trueButton" destination="dbs-ja-pNn" id="FE4-nT-oyg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CuM-EH-Wcu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="66"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Background-Bubbles" width="352" height="102"/>
         <image name="DiceOne" width="100" height="100"/>
         <image name="DiceeLogo" width="196" height="128"/>
         <image name="GreenBackground" width="444.5" height="414"/>
+        <image name="Rectangle" width="322" height="68"/>
         <image name="ball1" width="305" height="273.5"/>
         <image name="diamond" width="343" height="251"/>
         <image name="hard_egg" width="287.5" height="366"/>
