@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB05951C2833BCB700CC418E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05951B2833BCB700CC418E /* Question.swift */; };
+		EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0595202833D79F00CC418E /* QuizBrain.swift */; };
 		EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */; };
 		EB0C4C58282FCFF000B0E267 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */; };
 		EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB05951B2833BCB700CC418E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EB0595202833D79F00CC418E /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
 		EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xylophoneViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB05951D2833D6FB00CC418E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB05951B2833BCB700CC418E /* Question.swift */,
+				EB0595202833D79F00CC418E /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB05951E2833D72900CC418E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB0EB6282A98E500076820 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB05951F2833D73B00CC418E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBB62453283282D200594E04 /* QuizzlerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EB0C4C52282FCEDE00B0E267 /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +127,8 @@
 		EBB624522832829800594E04 /* Quizzler */ = {
 			isa = PBXGroup;
 			children = (
-				EBB62453283282D200594E04 /* QuizzlerViewController.swift */,
+				EB05951F2833D73B00CC418E /* Controller */,
+				EB05951D2833D6FB00CC418E /* Model */,
 			);
 			path = Quizzler;
 			sourceTree = "<group>";
@@ -129,7 +159,7 @@
 				EBCB0EC8282A9D4900076820 /* DiceRoll */,
 				EBCB0EC4282A993800076820 /* BaseFile */,
 				EBCB0EC5282A996000076820 /* I Am Rich */,
-				EBCB0EB6282A98E500076820 /* Main.storyboard */,
+				EB05951E2833D72900CC418E /* View */,
 				EBCB0EB9282A98E600076820 /* Assets.xcassets */,
 				EBCB0EBB282A98E600076820 /* LaunchScreen.storyboard */,
 				EBCB0EBE282A98E600076820 /* Info.plist */,
@@ -252,7 +282,9 @@
 				EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */,
 				EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */,
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
+				EB05951C2833BCB700CC418E /* Question.swift in Sources */,
 				EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */,
+				EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */,
 				EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */,
 				EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */,
 				EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */,
