@@ -19,6 +19,7 @@
 		EB5531F3282E5BE80086E5AB /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EC282E5BE80086E5AB /* E.wav */; };
 		EB5531F4282E5BE80086E5AB /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531ED282E5BE80086E5AB /* B.wav */; };
 		EB5531F5282E5BE80086E5AB /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EE282E5BE80086E5AB /* D.wav */; };
+		EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */; };
 		EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62453283282D200594E04 /* QuizzlerViewController.swift */; };
 		EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB0282A98E500076820 /* AppDelegate.swift */; };
 		EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB2282A98E500076820 /* SceneDelegate.swift */; };
@@ -43,6 +44,7 @@
 		EB5531EC282E5BE80086E5AB /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
 		EB5531ED282E5BE80086E5AB /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
 		EB5531EE282E5BE80086E5AB /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_CalculatorViewController.swift; sourceTree = "<group>"; };
 		EBB62453283282D200594E04 /* QuizzlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzlerViewController.swift; sourceTree = "<group>"; };
 		EBCB0EAD282A98E500076820 /* iOS Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCB0EB0282A98E500076820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,30 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		EB6D46762838D08600E80CAD /* BMI Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D46782838D0AD00E80CAD /* Controllers */,
+				EB6D46772838D0A500E80CAD /* Models */,
+			);
+			path = "BMI Calculator";
+			sourceTree = "<group>";
+		};
+		EB6D46772838D0A500E80CAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB6D46782838D0AD00E80CAD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		EBB624522832829800594E04 /* Quizzler */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +178,7 @@
 		EBCB0EAF282A98E500076820 /* iOS Go */ = {
 			isa = PBXGroup;
 			children = (
+				EB6D46762838D08600E80CAD /* BMI Calculator */,
 				EBB624522832829800594E04 /* Quizzler */,
 				EB0C4C52282FCEDE00B0E267 /* EggTimer */,
 				EB5531D6282E59760086E5AB /* Xylophone */,
@@ -283,6 +310,7 @@
 				EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */,
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
 				EB05951C2833BCB700CC418E /* Question.swift in Sources */,
+				EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */,
 				EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */,
 				EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */,
 				EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */,
