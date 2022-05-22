@@ -29,6 +29,8 @@
 		EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EC6282A99DC00076820 /* IAmRichViewController.swift */; };
 		EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EC9282A9D7800076820 /* DiceRollViewController.swift */; };
 		EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */; };
+		EBF4AB7A283A69B0006AC52E /* ResultBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */; };
+		EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		EBCB0EC6282A99DC00076820 /* IAmRichViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmRichViewController.swift; sourceTree = "<group>"; };
 		EBCB0EC9282A9D7800076820 /* DiceRollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollViewController.swift; sourceTree = "<group>"; };
 		EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8ballViewController.swift; sourceTree = "<group>"; };
+		EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIViewController.swift; sourceTree = "<group>"; };
+		EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		EB6D46772838D0A500E80CAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */,
+				EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -316,6 +322,8 @@
 				EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */,
 				EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */,
 				EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */,
+				EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */,
+				EBF4AB7A283A69B0006AC52E /* ResultBMIViewController.swift in Sources */,
 				EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

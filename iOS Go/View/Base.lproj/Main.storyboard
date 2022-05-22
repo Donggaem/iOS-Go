@@ -973,25 +973,26 @@ RGljZRAgSW1hZ2UgVmlldzE
                         <outlet property="heightSlider" destination="TPn-hT-ihm" id="oac-Lb-CJZ"/>
                         <outlet property="weightLabel" destination="bJd-sE-0lu" id="nPl-5k-xSh"/>
                         <outlet property="weightSlider" destination="wlz-dd-bde" id="xPk-T0-Yzl"/>
+                        <segue destination="M3L-xE-DiL" kind="presentation" identifier="goToResult" id="nWY-mx-IdV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABb-MJ-nZV" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1970" y="796"/>
         </scene>
-        <!--Calculator View Controller-->
+        <!--ResultBMI View Controller-->
         <scene sceneID="eBR-pa-fMq">
             <objects>
-                <viewController id="M3L-xE-DiL" customClass="BMI_CalculatorViewController" customModule="iOS_Go" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M3L-xE-DiL" customClass="ResultBMIViewController" customModule="iOS_Go" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TiC-9b-Pix">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="vh8-gJ-iX2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gRS-Vc-Ewv">
-                                <rect key="frame" x="89" y="359.5" width="236" height="177.5"/>
+                                <rect key="frame" x="89" y="332.5" width="236" height="177.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="YOUR RESULT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-Fq-t7e">
                                         <rect key="frame" x="0.0" y="0.0" width="236" height="42"/>
@@ -1014,7 +1015,7 @@ RGljZRAgSW1hZ2UgVmlldzE
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyd-uh-WSt">
-                                <rect key="frame" x="20" y="811" width="374" height="51"/>
+                                <rect key="frame" x="20" y="791" width="374" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="W5i-YI-jf1"/>
@@ -1029,6 +1030,9 @@ RGljZRAgSW1hZ2UgVmlldzE
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="M3L-xE-DiL" eventType="touchUpInside" id="0qk-aP-ckC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oQp-QW-c3e"/>
@@ -1045,6 +1049,10 @@ RGljZRAgSW1hZ2UgVmlldzE
                             <constraint firstAttribute="trailing" secondItem="vh8-gJ-iX2" secondAttribute="trailing" id="s59-FA-g7T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="YZt-Ww-02z" id="LTR-Li-aQ3"/>
+                        <outlet property="bmiLabel" destination="FJl-Nc-Y4Y" id="S8C-kB-3J4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fl-XB-xys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
