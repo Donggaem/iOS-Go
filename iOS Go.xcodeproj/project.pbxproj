@@ -11,6 +11,7 @@
 		EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0595202833D79F00CC418E /* QuizBrain.swift */; };
 		EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */; };
 		EB0C4C58282FCFF000B0E267 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */; };
+		EB123A5A283B9353004096CF /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB123A59283B9353004096CF /* BMI.swift */; };
 		EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */; };
 		EB5531EF282E5BE80086E5AB /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531E8282E5BE80086E5AB /* G.wav */; };
 		EB5531F0282E5BE80086E5AB /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531E9282E5BE80086E5AB /* F.wav */; };
@@ -38,6 +39,7 @@
 		EB0595202833D79F00CC418E /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
 		EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		EB123A59283B9353004096CF /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xylophoneViewController.swift; sourceTree = "<group>"; };
 		EB5531E8282E5BE80086E5AB /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
 		EB5531E9282E5BE80086E5AB /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */,
+				EB123A59283B9353004096CF /* BMI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */,
 				EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */,
 				EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */,
+				EB123A5A283B9353004096CF /* BMI.swift in Sources */,
 				EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */,
 				EBF4AB7A283A69B0006AC52E /* ResultBMIViewController.swift in Sources */,
 				EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */,
