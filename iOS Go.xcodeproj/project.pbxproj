@@ -29,6 +29,8 @@
 		EBCB0EBD282A98E600076820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB0EBB282A98E600076820 /* LaunchScreen.storyboard */; };
 		EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EC6282A99DC00076820 /* IAmRichViewController.swift */; };
 		EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EC9282A9D7800076820 /* DiceRollViewController.swift */; };
+		EBCD7398283F257100A69211 /* TipsyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD7397283F257100A69211 /* TipsyViewController.swift */; };
+		EBCD739A283F27BB00A69211 /* TipResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD7399283F27BB00A69211 /* TipResultViewController.swift */; };
 		EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */; };
 		EBF4AB7A283A69B0006AC52E /* ResultBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */; };
 		EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */; };
@@ -59,6 +61,8 @@
 		EBCB0EBE282A98E600076820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBCB0EC6282A99DC00076820 /* IAmRichViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmRichViewController.swift; sourceTree = "<group>"; };
 		EBCB0EC9282A9D7800076820 /* DiceRollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollViewController.swift; sourceTree = "<group>"; };
+		EBCD7397283F257100A69211 /* TipsyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyViewController.swift; sourceTree = "<group>"; };
+		EBCD7399283F27BB00A69211 /* TipResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipResultViewController.swift; sourceTree = "<group>"; };
 		EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8ballViewController.swift; sourceTree = "<group>"; };
 		EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIViewController.swift; sourceTree = "<group>"; };
 		EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 		EBCB0EAF282A98E500076820 /* iOS Go */ = {
 			isa = PBXGroup;
 			children = (
+				EBCD7395283F1DC000A69211 /* Tipsy */,
 				EB6D46762838D08600E80CAD /* BMI Calculator */,
 				EBB624522832829800594E04 /* Quizzler */,
 				EB0C4C52282FCEDE00B0E267 /* EggTimer */,
@@ -226,6 +231,23 @@
 				EBCB0EC9282A9D7800076820 /* DiceRollViewController.swift */,
 			);
 			path = DiceRoll;
+			sourceTree = "<group>";
+		};
+		EBCD7395283F1DC000A69211 /* Tipsy */ = {
+			isa = PBXGroup;
+			children = (
+				EBCD7396283F255A00A69211 /* Controllers */,
+			);
+			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		EBCD7396283F255A00A69211 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBCD7397283F257100A69211 /* TipsyViewController.swift */,
+				EBCD7399283F27BB00A69211 /* TipResultViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EBDA9546282BB0D900C02F96 /* Magic 8 ball */ = {
@@ -318,7 +340,9 @@
 				EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */,
 				EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */,
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
+				EBCD739A283F27BB00A69211 /* TipResultViewController.swift in Sources */,
 				EB05951C2833BCB700CC418E /* Question.swift in Sources */,
+				EBCD7398283F257100A69211 /* TipsyViewController.swift in Sources */,
 				EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */,
 				EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */,
 				EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */,
