@@ -12,6 +12,7 @@
 		EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */; };
 		EB0C4C58282FCFF000B0E267 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */; };
 		EB123A5A283B9353004096CF /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB123A59283B9353004096CF /* BMI.swift */; };
+		EB373AEE28470107009CB219 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB373AED28470107009CB219 /* WeatherViewController.swift */; };
 		EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */; };
 		EB5531EF282E5BE80086E5AB /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531E8282E5BE80086E5AB /* G.wav */; };
 		EB5531F0282E5BE80086E5AB /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531E9282E5BE80086E5AB /* F.wav */; };
@@ -42,6 +43,7 @@
 		EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
 		EB0C4C57282FCFF000B0E267 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		EB123A59283B9353004096CF /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		EB373AED28470107009CB219 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		EB5531D7282E5A040086E5AB /* xylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xylophoneViewController.swift; sourceTree = "<group>"; };
 		EB5531E8282E5BE80086E5AB /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
 		EB5531E9282E5BE80086E5AB /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
@@ -111,6 +113,30 @@
 				EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		EB373AEA284700C1009CB219 /* Clima */ = {
+			isa = PBXGroup;
+			children = (
+				EB373AEC284700E2009CB219 /* Controller */,
+				EB373AEB284700D1009CB219 /* Model */,
+			);
+			path = Clima;
+			sourceTree = "<group>";
+		};
+		EB373AEB284700D1009CB219 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB373AEC284700E2009CB219 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB373AED28470107009CB219 /* WeatherViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		EB5531D6282E59760086E5AB /* Xylophone */ = {
@@ -191,6 +217,7 @@
 		EBCB0EAF282A98E500076820 /* iOS Go */ = {
 			isa = PBXGroup;
 			children = (
+				EB373AEA284700C1009CB219 /* Clima */,
 				EBCD7395283F1DC000A69211 /* Tipsy */,
 				EB6D46762838D08600E80CAD /* BMI Calculator */,
 				EBB624522832829800594E04 /* Quizzler */,
@@ -338,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */,
+				EB373AEE28470107009CB219 /* WeatherViewController.swift in Sources */,
 				EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */,
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
 				EBCD739A283F27BB00A69211 /* TipResultViewController.swift in Sources */,
