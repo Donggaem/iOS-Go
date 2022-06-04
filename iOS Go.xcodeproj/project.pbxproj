@@ -35,6 +35,7 @@
 		EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */; };
 		EBF4AB7A283A69B0006AC52E /* ResultBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */; };
 		EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */; };
+		EBF91A90284B124D00F28C34 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF91A8F284B124D00F28C34 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8ballViewController.swift; sourceTree = "<group>"; };
 		EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIViewController.swift; sourceTree = "<group>"; };
 		EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		EBF91A8F284B124D00F28C34 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		EB373AEB284700D1009CB219 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBF91A8F284B124D00F28C34 /* WeatherManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
 				EBCD739A283F27BB00A69211 /* TipResultViewController.swift in Sources */,
 				EB05951C2833BCB700CC418E /* Question.swift in Sources */,
+				EBF91A90284B124D00F28C34 /* WeatherManager.swift in Sources */,
 				EBCD7398283F257100A69211 /* TipsyViewController.swift in Sources */,
 				EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */,
 				EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */,

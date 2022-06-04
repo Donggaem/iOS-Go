@@ -14,6 +14,8 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var seachTextField: UITextField!
     
+    var weatherManager = WeatherManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +44,11 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     
     //편집이 종료된 텍스트필드
     func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        if let city = seachTextField.text {
+            weatherManager.fetchWeather(cityName: city)
+        }
+        
         seachTextField.text = ""
     }
 }
