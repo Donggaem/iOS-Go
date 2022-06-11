@@ -22,6 +22,7 @@
 		EB5531F4282E5BE80086E5AB /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531ED282E5BE80086E5AB /* B.wav */; };
 		EB5531F5282E5BE80086E5AB /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EE282E5BE80086E5AB /* D.wav */; };
 		EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */; };
+		EB7A1EF628546CA80015EA4E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A1EF528546CA80015EA4E /* WeatherModel.swift */; };
 		EBA26F1128517E51008F3E60 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA26F1028517E51008F3E60 /* WeatherData.swift */; };
 		EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62453283282D200594E04 /* QuizzlerViewController.swift */; };
 		EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0EB0282A98E500076820 /* AppDelegate.swift */; };
@@ -55,6 +56,7 @@
 		EB5531ED282E5BE80086E5AB /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
 		EB5531EE282E5BE80086E5AB /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 		EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_CalculatorViewController.swift; sourceTree = "<group>"; };
+		EB7A1EF528546CA80015EA4E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		EBA26F1028517E51008F3E60 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		EBB62453283282D200594E04 /* QuizzlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzlerViewController.swift; sourceTree = "<group>"; };
 		EBCB0EAD282A98E500076820 /* iOS Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 			children = (
 				EBF91A8F284B124D00F28C34 /* WeatherManager.swift */,
 				EBA26F1028517E51008F3E60 /* WeatherData.swift */,
+				EB7A1EF528546CA80015EA4E /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */,
 				EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */,
 				EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */,
+				EB7A1EF628546CA80015EA4E /* WeatherModel.swift in Sources */,
 				EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */,
 				EB123A5A283B9353004096CF /* BMI.swift in Sources */,
 				EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */,
