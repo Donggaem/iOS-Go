@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
+class WeatherViewController: UIViewController {
 
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -22,7 +22,12 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
         weatherManager.delegate = self
         seachTextField.delegate = self
     }
+}
 
+//MARK: - UITextFoeldDelegate
+
+extension WeatherViewController: UITextFieldDelegate {
+    
     @IBAction func seachPressed(_ sender: UIButton) {
         seachTextField.endEditing(true)
         print(seachTextField.text!)
@@ -52,7 +57,11 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
         
         seachTextField.text = ""
     }
-    
+}
+
+//MARK: - WeatherManagerDelegate
+
+extension WeatherViewController : WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
             self.temperatureLabel.text = weather.temperatureString
