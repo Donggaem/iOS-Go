@@ -21,6 +21,8 @@
 		EB5531F3282E5BE80086E5AB /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EC282E5BE80086E5AB /* E.wav */; };
 		EB5531F4282E5BE80086E5AB /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531ED282E5BE80086E5AB /* B.wav */; };
 		EB5531F5282E5BE80086E5AB /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB5531EE282E5BE80086E5AB /* D.wav */; };
+		EB6005AE285DE671008A1324 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6005AD285DE671008A1324 /* CoinManager.swift */; };
+		EB6005B0285DE69C008A1324 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6005AF285DE69C008A1324 /* CoinViewController.swift */; };
 		EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */; };
 		EB7A1EF628546CA80015EA4E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A1EF528546CA80015EA4E /* WeatherModel.swift */; };
 		EBA26F1128517E51008F3E60 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA26F1028517E51008F3E60 /* WeatherData.swift */; };
@@ -55,6 +57,8 @@
 		EB5531EC282E5BE80086E5AB /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
 		EB5531ED282E5BE80086E5AB /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
 		EB5531EE282E5BE80086E5AB /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		EB6005AD285DE671008A1324 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		EB6005AF285DE69C008A1324 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_CalculatorViewController.swift; sourceTree = "<group>"; };
 		EB7A1EF528546CA80015EA4E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		EBA26F1028517E51008F3E60 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
@@ -171,6 +175,31 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		EB6005AA285DE5ED008A1324 /* ByteCoin */ = {
+			isa = PBXGroup;
+			children = (
+				EB6005AC285DE60E008A1324 /* Model */,
+				EB6005AB285DE604008A1324 /* Controller */,
+			);
+			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		EB6005AB285DE604008A1324 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB6005AF285DE69C008A1324 /* CoinViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB6005AC285DE60E008A1324 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB6005AD285DE671008A1324 /* CoinManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EB6D46762838D08600E80CAD /* BMI Calculator */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +255,7 @@
 		EBCB0EAF282A98E500076820 /* iOS Go */ = {
 			isa = PBXGroup;
 			children = (
+				EB6005AA285DE5ED008A1324 /* ByteCoin */,
 				EB373AEA284700C1009CB219 /* Clima */,
 				EBCD7395283F1DC000A69211 /* Tipsy */,
 				EB6D46762838D08600E80CAD /* BMI Calculator */,
@@ -376,7 +406,9 @@
 				EBA26F1128517E51008F3E60 /* WeatherData.swift in Sources */,
 				EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */,
 				EB373AEE28470107009CB219 /* WeatherViewController.swift in Sources */,
+				EB6005AE285DE671008A1324 /* CoinManager.swift in Sources */,
 				EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */,
+				EB6005B0285DE69C008A1324 /* CoinViewController.swift in Sources */,
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
 				EBCD739A283F27BB00A69211 /* TipResultViewController.swift in Sources */,
 				EB05951C2833BCB700CC418E /* Question.swift in Sources */,
