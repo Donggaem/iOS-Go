@@ -25,6 +25,10 @@
 		EB6005B0285DE69C008A1324 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6005AF285DE69C008A1324 /* CoinViewController.swift */; };
 		EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */; };
 		EB7A1EF628546CA80015EA4E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A1EF528546CA80015EA4E /* WeatherModel.swift */; };
+		EB7ED96628869955002DE193 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7ED96528869955002DE193 /* LoginViewController.swift */; };
+		EB7ED96828869974002DE193 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7ED96728869974002DE193 /* ChatViewController.swift */; };
+		EB7ED96A28869985002DE193 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7ED96928869985002DE193 /* RegisterViewController.swift */; };
+		EB7ED96C28869999002DE193 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7ED96B28869999002DE193 /* WelcomeViewController.swift */; };
 		EBA26F1128517E51008F3E60 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA26F1028517E51008F3E60 /* WeatherData.swift */; };
 		EBAD59D428608B3400F5C4AE /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAD59D328608B3400F5C4AE /* CoinData.swift */; };
 		EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62453283282D200594E04 /* QuizzlerViewController.swift */; };
@@ -62,6 +66,10 @@
 		EB6005AF285DE69C008A1324 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		EB6D46792838D14B00E80CAD /* BMI_CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI_CalculatorViewController.swift; sourceTree = "<group>"; };
 		EB7A1EF528546CA80015EA4E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		EB7ED96528869955002DE193 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB7ED96728869974002DE193 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EB7ED96928869985002DE193 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EB7ED96B28869999002DE193 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		EBA26F1028517E51008F3E60 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		EBAD59D328608B3400F5C4AE /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		EBB62453283282D200594E04 /* QuizzlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzlerViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +238,33 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		EB7ED96428869931002DE193 /* FlashChat */ = {
+			isa = PBXGroup;
+			children = (
+				EB7ED96E288699B1002DE193 /* Models */,
+				EB7ED96D2886999D002DE193 /* Controllers */,
+			);
+			path = FlashChat;
+			sourceTree = "<group>";
+		};
+		EB7ED96D2886999D002DE193 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB7ED96528869955002DE193 /* LoginViewController.swift */,
+				EB7ED96728869974002DE193 /* ChatViewController.swift */,
+				EB7ED96928869985002DE193 /* RegisterViewController.swift */,
+				EB7ED96B28869999002DE193 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB7ED96E288699B1002DE193 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EBB624522832829800594E04 /* Quizzler */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +293,7 @@
 		EBCB0EAF282A98E500076820 /* iOS Go */ = {
 			isa = PBXGroup;
 			children = (
+				EB7ED96428869931002DE193 /* FlashChat */,
 				EB6005AA285DE5ED008A1324 /* ByteCoin */,
 				EB373AEA284700C1009CB219 /* Clima */,
 				EBCD7395283F1DC000A69211 /* Tipsy */,
@@ -406,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7ED96C28869999002DE193 /* WelcomeViewController.swift in Sources */,
 				EBAD59D428608B3400F5C4AE /* CoinData.swift in Sources */,
 				EBA26F1128517E51008F3E60 /* WeatherData.swift in Sources */,
 				EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */,
@@ -418,15 +455,18 @@
 				EB05951C2833BCB700CC418E /* Question.swift in Sources */,
 				EBF91A90284B124D00F28C34 /* WeatherManager.swift in Sources */,
 				EBCD7398283F257100A69211 /* TipsyViewController.swift in Sources */,
+				EB7ED96628869955002DE193 /* LoginViewController.swift in Sources */,
 				EB6D467A2838D14B00E80CAD /* BMI_CalculatorViewController.swift in Sources */,
 				EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */,
 				EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */,
 				EBB62454283282D200594E04 /* QuizzlerViewController.swift in Sources */,
 				EBCB0ECA282A9D7800076820 /* DiceRollViewController.swift in Sources */,
+				EB7ED96828869974002DE193 /* ChatViewController.swift in Sources */,
 				EB7A1EF628546CA80015EA4E /* WeatherModel.swift in Sources */,
 				EB5531D8282E5A040086E5AB /* xylophoneViewController.swift in Sources */,
 				EB123A5A283B9353004096CF /* BMI.swift in Sources */,
 				EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */,
+				EB7ED96A28869985002DE193 /* RegisterViewController.swift in Sources */,
 				EBF4AB7A283A69B0006AC52E /* ResultBMIViewController.swift in Sources */,
 				EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */,
 			);
