@@ -250,10 +250,10 @@
 		EB7ED96D2886999D002DE193 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EB7ED96B28869999002DE193 /* WelcomeViewController.swift */,
+				EB7ED96928869985002DE193 /* RegisterViewController.swift */,
 				EB7ED96528869955002DE193 /* LoginViewController.swift */,
 				EB7ED96728869974002DE193 /* ChatViewController.swift */,
-				EB7ED96928869985002DE193 /* RegisterViewController.swift */,
-				EB7ED96B28869999002DE193 /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

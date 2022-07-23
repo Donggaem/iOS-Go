@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oqa-HV-gCf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dws-QV-o56">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -1566,77 +1566,6 @@ RGljZRAgSW1hZ2UgVmlldzE
             </objects>
             <point key="canvasLocation" x="1193" y="1519"/>
         </scene>
-        <!--Welcome View Controller-->
-        <scene sceneID="z38-Ld-4d9">
-            <objects>
-                <viewController id="idq-Zc-yXp" customClass="WelcomeViewController" customModule="iOS_Go" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P4p-bq-L4g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-wG-lWv">
-                                <rect key="frame" x="0.0" y="801" width="414" height="61"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="AUl-Nd-HXR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1NI-Y5-5Gb" kind="show" id="Ac0-ci-6RI"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ub-W5-eIo">
-                                <rect key="frame" x="52" y="418" width="310" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="4eA-CT-IU8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
-                                <color key="textColor" name="BrandBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysu-fp-f1B">
-                                <rect key="frame" x="0.0" y="745" width="414" height="48"/>
-                                <color key="backgroundColor" name="BrandLightBlue"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="qCr-mO-d2E"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" name="BrandBlue"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Gmg-tf-jCz" kind="show" id="kBr-e8-zad"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="9Q7-yo-dOb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ysu-fp-f1B" firstAttribute="trailing" secondItem="9Q7-yo-dOb" secondAttribute="trailing" id="Hbv-PX-fvp"/>
-                            <constraint firstItem="2ub-W5-eIo" firstAttribute="leading" secondItem="9Q7-yo-dOb" secondAttribute="leading" constant="52" id="Ly9-gq-PCj"/>
-                            <constraint firstItem="ysu-fp-f1B" firstAttribute="leading" secondItem="9Q7-yo-dOb" secondAttribute="leading" id="Nt6-ST-2NC"/>
-                            <constraint firstItem="2ub-W5-eIo" firstAttribute="centerX" secondItem="P4p-bq-L4g" secondAttribute="centerX" id="PdE-xh-G0p"/>
-                            <constraint firstItem="9Q7-yo-dOb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2ub-W5-eIo" secondAttribute="trailing" id="SLc-dw-hbk"/>
-                            <constraint firstItem="zPb-wG-lWv" firstAttribute="top" secondItem="ysu-fp-f1B" secondAttribute="bottom" constant="8" id="fez-Sb-ign"/>
-                            <constraint firstItem="zPb-wG-lWv" firstAttribute="trailing" secondItem="9Q7-yo-dOb" secondAttribute="trailing" id="gPu-PY-E5f"/>
-                            <constraint firstItem="zPb-wG-lWv" firstAttribute="leading" secondItem="9Q7-yo-dOb" secondAttribute="leading" id="kNc-bT-7sB"/>
-                            <constraint firstItem="2ub-W5-eIo" firstAttribute="centerY" secondItem="P4p-bq-L4g" secondAttribute="centerY" id="kjW-lV-wo6"/>
-                            <constraint firstItem="zPb-wG-lWv" firstAttribute="bottom" secondItem="9Q7-yo-dOb" secondAttribute="bottom" id="tpG-sN-0pv"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="aYB-6X-seF"/>
-                    <connections>
-                        <outlet property="titleLabel" destination="2ub-W5-eIo" id="VdK-V0-bWO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vw9-gx-3Vj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="642.02898550724638" y="3014.7321428571427"/>
-        </scene>
         <!--Register View Controller-->
         <scene sceneID="9Gq-Kc-ZYo">
             <objects>
@@ -1730,7 +1659,7 @@ RGljZRAgSW1hZ2UgVmlldzE
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTD-RY-z4A" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528.985507246377" y="3015.4017857142858"/>
+            <point key="canvasLocation" x="1520" y="3011"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="yX7-Cd-9OY">
@@ -1909,23 +1838,94 @@ RGljZRAgSW1hZ2UgVmlldzE
             </objects>
             <point key="canvasLocation" x="610" y="3753"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="PVF-lT-nCk">
+        <!--Welcome View Controller-->
+        <scene sceneID="hce-HY-CoM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oqa-HV-gCf" sceneMemberID="viewController">
+                <viewController id="qoM-qA-EZC" customClass="WelcomeViewController" customModule="iOS_Go" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nug-T7-cab">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zur-T7-IDf">
+                                <rect key="frame" x="0.0" y="801" width="414" height="61"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="ReN-BG-Os5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1NI-Y5-5Gb" kind="show" id="JZz-8d-qdJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-Pg-2ZH">
+                                <rect key="frame" x="52" y="418" width="310" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ocr-N3-QrH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
+                                <color key="textColor" name="BrandBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL0-ey-Wp1">
+                                <rect key="frame" x="0.0" y="745" width="414" height="48"/>
+                                <color key="backgroundColor" name="BrandLightBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="pjD-mB-mJI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" name="BrandBlue"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gmg-tf-jCz" kind="show" id="1Pb-FN-lx6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XS1-3V-rfz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zur-T7-IDf" firstAttribute="leading" secondItem="XS1-3V-rfz" secondAttribute="leading" id="BCK-cU-Ah8"/>
+                            <constraint firstItem="r1Q-Pg-2ZH" firstAttribute="centerX" secondItem="nug-T7-cab" secondAttribute="centerX" id="C62-OJ-Eer"/>
+                            <constraint firstItem="HL0-ey-Wp1" firstAttribute="leading" secondItem="XS1-3V-rfz" secondAttribute="leading" id="QNf-Cd-Njq"/>
+                            <constraint firstItem="zur-T7-IDf" firstAttribute="bottom" secondItem="XS1-3V-rfz" secondAttribute="bottom" id="UE2-EA-BcH"/>
+                            <constraint firstItem="r1Q-Pg-2ZH" firstAttribute="centerY" secondItem="nug-T7-cab" secondAttribute="centerY" id="XuF-ow-cmd"/>
+                            <constraint firstItem="zur-T7-IDf" firstAttribute="trailing" secondItem="XS1-3V-rfz" secondAttribute="trailing" id="kNs-AV-aaH"/>
+                            <constraint firstItem="zur-T7-IDf" firstAttribute="top" secondItem="HL0-ey-Wp1" secondAttribute="bottom" constant="8" id="ujR-t1-PFr"/>
+                            <constraint firstItem="XS1-3V-rfz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r1Q-Pg-2ZH" secondAttribute="trailing" id="zED-LR-4HB"/>
+                            <constraint firstItem="r1Q-Pg-2ZH" firstAttribute="leading" secondItem="XS1-3V-rfz" secondAttribute="leading" constant="52" id="zGA-AI-F1Q"/>
+                            <constraint firstItem="HL0-ey-Wp1" firstAttribute="trailing" secondItem="XS1-3V-rfz" secondAttribute="trailing" id="zR4-Ga-PuO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fnM-Jt-dVJ"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="r1Q-Pg-2ZH" id="g8O-b4-p3W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeO-R1-9cD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="3010"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q2T-b9-RMc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dws-QV-o56" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aos-gq-0T8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fCp-4i-aCa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="idq-Zc-yXp" kind="relationship" relationship="rootViewController" id="I3l-ef-cq1"/>
+                        <segue destination="qoM-qA-EZC" kind="relationship" relationship="rootViewController" id="HK7-rl-0Na"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yr2-pa-1UI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKw-az-FVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-268.1159420289855" y="3014.7321428571427"/>
+            <point key="canvasLocation" x="-268" y="3010"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
