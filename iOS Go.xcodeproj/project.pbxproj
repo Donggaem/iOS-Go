@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7C77338C48D62F077EBAB7 /* Pods_iOS_Go.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798CCCD28DE4AE8B2885D365 /* Pods_iOS_Go.framework */; };
 		EB05951C2833BCB700CC418E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05951B2833BCB700CC418E /* Question.swift */; };
 		EB0595212833D79F00CC418E /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0595202833D79F00CC418E /* QuizBrain.swift */; };
 		EB0C4C54282FCF4A00B0E267 /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */; };
@@ -48,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		455C6B7EF8F21B1656A5AEE4 /* Pods-iOS Go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Go.release.xcconfig"; path = "Target Support Files/Pods-iOS Go/Pods-iOS Go.release.xcconfig"; sourceTree = "<group>"; };
+		798CCCD28DE4AE8B2885D365 /* Pods_iOS_Go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19A9913C88BE4DF77EAFCDC /* Pods-iOS Go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Go.debug.xcconfig"; path = "Target Support Files/Pods-iOS Go/Pods-iOS Go.debug.xcconfig"; sourceTree = "<group>"; };
 		EB05951B2833BCB700CC418E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		EB0595202833D79F00CC418E /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		EB0C4C53282FCF4A00B0E267 /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
@@ -95,12 +99,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7C77338C48D62F077EBAB7 /* Pods_iOS_Go.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8BA371D2D6744589B3FE14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E19A9913C88BE4DF77EAFCDC /* Pods-iOS Go.debug.xcconfig */,
+				455C6B7EF8F21B1656A5AEE4 /* Pods-iOS Go.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85BDD872D383E427B2C7A535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798CCCD28DE4AE8B2885D365 /* Pods_iOS_Go.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB05951D2833D6FB00CC418E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +302,8 @@
 			children = (
 				EBCB0EAF282A98E500076820 /* iOS Go */,
 				EBCB0EAE282A98E500076820 /* Products */,
+				0B8BA371D2D6744589B3FE14 /* Pods */,
+				85BDD872D383E427B2C7A535 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,9 +395,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBCB0EC1282A98E600076820 /* Build configuration list for PBXNativeTarget "iOS Go" */;
 			buildPhases = (
+				F2A6EC57DBC9FD28F5D6CF50 /* [CP] Check Pods Manifest.lock */,
 				EBCB0EA9282A98E500076820 /* Sources */,
 				EBCB0EAA282A98E500076820 /* Frameworks */,
 				EBCB0EAB282A98E500076820 /* Resources */,
+				7B1D0E41792AB37CDDE3722B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -436,6 +463,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B1D0E41792AB37CDDE3722B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Go/Pods-iOS Go-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Go/Pods-iOS Go-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Go/Pods-iOS Go-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A6EC57DBC9FD28F5D6CF50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Go-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBCB0EA9282A98E500076820 /* Sources */ = {
@@ -610,6 +679,7 @@
 		};
 		EBCB0EC2282A98E600076820 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19A9913C88BE4DF77EAFCDC /* Pods-iOS Go.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -639,6 +709,7 @@
 		};
 		EBCB0EC3282A98E600076820 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455C6B7EF8F21B1656A5AEE4 /* Pods-iOS Go.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

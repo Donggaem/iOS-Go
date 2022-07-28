@@ -1,0 +1,6 @@
+framework module Pods_iOS_Go {
+  umbrella header "Pods-iOS Go-umbrella.h"
+
+  export *
+  module * { export * }
+}
