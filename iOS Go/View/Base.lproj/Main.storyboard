@@ -1860,7 +1860,7 @@ RGljZRAgSW1hZ2UgVmlldzE
                                     <segue destination="1NI-Y5-5Gb" kind="show" id="JZz-8d-qdJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-Pg-2ZH" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-Pg-2ZH">
                                 <rect key="frame" x="52" y="418" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ocr-N3-QrH"/>
@@ -1928,6 +1928,11 @@ RGljZRAgSW1hZ2UgVmlldzE
             <point key="canvasLocation" x="-268" y="3010"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="r1Q-Pg-2ZH">
+            <size key="intrinsicContentSize" width="307.5" height="60"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="zyG-IB-C9Q"/>
     </inferredMetricsTieBreakers>

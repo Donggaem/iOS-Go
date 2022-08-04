@@ -7,6 +7,6 @@ target 'iOS Go' do
 
   # Pods for iOS Go
 
-  pod 'CLTypingLabel'  
-
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 end
