@@ -7,6 +7,6 @@ target 'iOS Go' do
 
   # Pods for iOS Go
 
-  pod 'FirebaseAuth'
+  pod 'Firebase/Auth'
   pod 'FirebaseFirestore'
 end
