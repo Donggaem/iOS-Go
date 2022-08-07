@@ -1749,7 +1749,7 @@ RGljZRAgSW1hZ2UgVmlldzE
                     <connections>
                         <outlet property="emailTextfield" destination="5aY-jR-xId" id="Hcv-8E-n7O"/>
                         <outlet property="passwordTextfield" destination="Jow-4H-8RA" id="JIo-VT-J6T"/>
-                        <segue destination="QND-QV-wPJ" kind="show" identifier="LoginToChat" id="EQm-sb-5V1"/>
+                        <segue destination="QND-QV-wPJ" kind="show" identifier="LoginToChat" id="8y3-I2-lGD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POe-t2-n8w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1764,20 +1764,6 @@ RGljZRAgSW1hZ2UgVmlldzE
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lgg-g6-Zz4">
-                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="rha-WK-BKZ">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rha-WK-BKZ" id="iDD-Qj-Wrs">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgV-DH-FHT">
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>
                                 <subviews>
@@ -1815,6 +1801,20 @@ RGljZRAgSW1hZ2UgVmlldzE
                                     <constraint firstItem="n9b-am-6aq" firstAttribute="top" secondItem="rgV-DH-FHT" secondAttribute="top" constant="20" id="tzJ-uj-SPs"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lgg-g6-Zz4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="rha-WK-BKZ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rha-WK-BKZ" id="iDD-Qj-Wrs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t9J-wJ-rbk"/>
                         <color key="backgroundColor" name="BrandPurple"/>
@@ -1828,7 +1828,13 @@ RGljZRAgSW1hZ2UgVmlldzE
                             <constraint firstItem="t9J-wJ-rbk" firstAttribute="bottom" secondItem="rgV-DH-FHT" secondAttribute="bottom" id="xV1-gX-YK4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4ER-lf-7wR"/>
+                    <navigationItem key="navigationItem" id="4ER-lf-7wR">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Qk1-Aw-ENQ">
+                            <connections>
+                                <action selector="logOutPressed:" destination="QND-QV-wPJ" id="QaR-4n-d0i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="Lyk-fh-v3k" id="KWh-yz-hnt"/>
                         <outlet property="tableView" destination="Lgg-g6-Zz4" id="fGW-cD-gYf"/>
@@ -1928,11 +1934,6 @@ RGljZRAgSW1hZ2UgVmlldzE
             <point key="canvasLocation" x="-268" y="3010"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="r1Q-Pg-2ZH">
-            <size key="intrinsicContentSize" width="307.5" height="60"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="zyG-IB-C9Q"/>
     </inferredMetricsTieBreakers>
