@@ -43,6 +43,10 @@
 		EBCD7398283F257100A69211 /* TipsyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD7397283F257100A69211 /* TipsyViewController.swift */; };
 		EBCD739A283F27BB00A69211 /* TipResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD7399283F27BB00A69211 /* TipResultViewController.swift */; };
 		EBDA9548282BB12E00C02F96 /* Magic8ballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */; };
+		EBE3EA5E28A2642700747D51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE3EA5D28A2642700747D51 /* Constants.swift */; };
+		EBE3EA6028A26DBA00747D51 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE3EA5F28A26DBA00747D51 /* Message.swift */; };
+		EBE3EA6428A29AE700747D51 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE3EA6228A29AE700747D51 /* MessageCell.swift */; };
+		EBE3EA6528A29AE700747D51 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE3EA6328A29AE700747D51 /* MessageCell.xib */; };
 		EBF2A9BD289BEB9F00DFC786 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBF2A9BC289BEB9F00DFC786 /* GoogleService-Info.plist */; };
 		EBF4AB7A283A69B0006AC52E /* ResultBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */; };
 		EBF4AB7C283A76AE006AC52E /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */; };
@@ -90,6 +94,10 @@
 		EBCD7397283F257100A69211 /* TipsyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyViewController.swift; sourceTree = "<group>"; };
 		EBCD7399283F27BB00A69211 /* TipResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipResultViewController.swift; sourceTree = "<group>"; };
 		EBDA9547282BB12E00C02F96 /* Magic8ballViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8ballViewController.swift; sourceTree = "<group>"; };
+		EBE3EA5D28A2642700747D51 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EBE3EA5F28A26DBA00747D51 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EBE3EA6228A29AE700747D51 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		EBE3EA6328A29AE700747D51 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		EBF2A9BC289BEB9F00DFC786 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBF4AB79283A69B0006AC52E /* ResultBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBMIViewController.swift; sourceTree = "<group>"; };
 		EBF4AB7B283A76AE006AC52E /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
@@ -265,8 +273,10 @@
 		EB7ED96428869931002DE193 /* FlashChat */ = {
 			isa = PBXGroup;
 			children = (
+				EBE3EA6128A29AA400747D51 /* Views */,
 				EB7ED96E288699B1002DE193 /* Models */,
 				EB7ED96D2886999D002DE193 /* Controllers */,
+				EBE3EA5D28A2642700747D51 /* Constants.swift */,
 			);
 			path = FlashChat;
 			sourceTree = "<group>";
@@ -285,6 +295,7 @@
 		EB7ED96E288699B1002DE193 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EBE3EA5F28A26DBA00747D51 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -390,6 +401,15 @@
 			path = "Magic 8 ball";
 			sourceTree = "<group>";
 		};
+		EBE3EA6128A29AA400747D51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBE3EA6228A29AE700747D51 /* MessageCell.swift */,
+				EBE3EA6328A29AE700747D51 /* MessageCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,6 +476,7 @@
 				EB5531F1282E5BE80086E5AB /* A.wav in Resources */,
 				EB5531EF282E5BE80086E5AB /* G.wav in Resources */,
 				EBCB0EBD282A98E600076820 /* LaunchScreen.storyboard in Resources */,
+				EBE3EA6528A29AE700747D51 /* MessageCell.xib in Resources */,
 				EB0C4C58282FCFF000B0E267 /* alarm_sound.mp3 in Resources */,
 				EBCB0EBA282A98E600076820 /* Assets.xcassets in Resources */,
 				EBF2A9BD289BEB9F00DFC786 /* GoogleService-Info.plist in Resources */,
@@ -521,13 +542,16 @@
 				EBAD59D428608B3400F5C4AE /* CoinData.swift in Sources */,
 				EBA26F1128517E51008F3E60 /* WeatherData.swift in Sources */,
 				EBCB0EB1282A98E500076820 /* AppDelegate.swift in Sources */,
+				EBE3EA6028A26DBA00747D51 /* Message.swift in Sources */,
 				EB373AEE28470107009CB219 /* WeatherViewController.swift in Sources */,
 				EB6005AE285DE671008A1324 /* CoinManager.swift in Sources */,
 				EBCB0EC7282A99DC00076820 /* IAmRichViewController.swift in Sources */,
 				EB6005B0285DE69C008A1324 /* CoinViewController.swift in Sources */,
 				EBCB0EB3282A98E500076820 /* SceneDelegate.swift in Sources */,
 				EBCD739A283F27BB00A69211 /* TipResultViewController.swift in Sources */,
+				EBE3EA6428A29AE700747D51 /* MessageCell.swift in Sources */,
 				EB05951C2833BCB700CC418E /* Question.swift in Sources */,
+				EBE3EA5E28A2642700747D51 /* Constants.swift in Sources */,
 				EBF91A90284B124D00F28C34 /* WeatherManager.swift in Sources */,
 				EBCD7398283F257100A69211 /* TipsyViewController.swift in Sources */,
 				EB7ED96628869955002DE193 /* LoginViewController.swift in Sources */,
