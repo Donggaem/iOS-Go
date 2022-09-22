@@ -8,13 +8,13 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         titleLabel.text = ""
         var charIndex = 0.0
         let titleText = K.appName
@@ -25,5 +25,5 @@ class WelcomeViewController: UIViewController {
             charIndex += 1
         }
     }
-
+    
 }
