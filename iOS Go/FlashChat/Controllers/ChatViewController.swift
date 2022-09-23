@@ -48,7 +48,7 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
-
+                                
                             }
                         }
                     }
